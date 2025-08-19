@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: website-analyzer
+    env: node
+    plan: free  # or choose a paid plan
+    branch: main  # adjust if you use another branch
+    buildCommand: |
+      npm install
+      npm run build
+    startCommand: npm run start
+    # Root directory of your project (leave empty if project is at repo root)
+    rootDirectory: ""
+    autoDeploy: true
+    # Environment variables
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000  # or leave empty and use `process.env.PORT || 3000` in code
