@@ -14,7 +14,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@google/genai": "^1.15.0",
+  
     "@google/generative-ai": "^0.24.1",
     "@libsql/client": "^0.15.12",
     "@types/cors": "^2.8.19",
@@ -32,9 +32,11 @@
     "nodemon": "^3.1.10",
     "passport": "^0.7.0",
     "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2", 
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "drizzle-kit": "^0.31.4"
+    "drizzle-kit": "^0.31.4",
+    "typescript": "^5.0.0"
   }
 }
