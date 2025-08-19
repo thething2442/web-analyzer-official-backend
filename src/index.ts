@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import router from './routes/router'
 import * as dotenv from 'dotenv';
-import { Request,Response } from 'express';
+import 'reflect-metadata'; 
 dotenv.config()
 const application = express()
 const port = process.env.DATABASE_PORT  as string || 3000
