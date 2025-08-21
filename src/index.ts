@@ -5,7 +5,7 @@ import * as dotenv from 'dotenv';
 import 'reflect-metadata'; 
 dotenv.config()
 const application = express()
-const port = process.env.DATABASE_PORT  as string || 3000
+const port = process.env.DATABASE_PORT|| 3000
 application.use(cors({
   origin:['*'],
   methods:['POST','GET']
